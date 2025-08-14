@@ -1,0 +1,558 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		A80164832E4D88DE00F299A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A80164692E4D88DC00F299A6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A80164702E4D88DC00F299A6;
+			remoteInfo = "Job App Counter";
+		};
+		A801648D2E4D88DE00F299A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A80164692E4D88DC00F299A6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A80164702E4D88DC00F299A6;
+			remoteInfo = "Job App Counter";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A80164712E4D88DC00F299A6 /* Job App Counter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Job App Counter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A80164822E4D88DE00F299A6 /* Job App CounterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Job App CounterTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A801648C2E4D88DE00F299A6 /* Job App CounterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Job App CounterUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		A80164732E4D88DC00F299A6 /* Job App Counter */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Job App Counter";
+			sourceTree = "<group>";
+		};
+		A80164852E4D88DE00F299A6 /* Job App CounterTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Job App CounterTests";
+			sourceTree = "<group>";
+		};
+		A801648F2E4D88DE00F299A6 /* Job App CounterUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Job App CounterUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A801646E2E4D88DC00F299A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A801647F2E4D88DE00F299A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A80164892E4D88DE00F299A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A80164682E4D88DC00F299A6 = {
+			isa = PBXGroup;
+			children = (
+				A80164732E4D88DC00F299A6 /* Job App Counter */,
+				A80164852E4D88DE00F299A6 /* Job App CounterTests */,
+				A801648F2E4D88DE00F299A6 /* Job App CounterUITests */,
+				A80164722E4D88DC00F299A6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A80164722E4D88DC00F299A6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A80164712E4D88DC00F299A6 /* Job App Counter.app */,
+				A80164822E4D88DE00F299A6 /* Job App CounterTests.xctest */,
+				A801648C2E4D88DE00F299A6 /* Job App CounterUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A80164702E4D88DC00F299A6 /* Job App Counter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A80164962E4D88DE00F299A6 /* Build configuration list for PBXNativeTarget "Job App Counter" */;
+			buildPhases = (
+				A801646D2E4D88DC00F299A6 /* Sources */,
+				A801646E2E4D88DC00F299A6 /* Frameworks */,
+				A801646F2E4D88DC00F299A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				A80164732E4D88DC00F299A6 /* Job App Counter */,
+			);
+			name = "Job App Counter";
+			packageProductDependencies = (
+			);
+			productName = "Job App Counter";
+			productReference = A80164712E4D88DC00F299A6 /* Job App Counter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A80164812E4D88DE00F299A6 /* Job App CounterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A80164992E4D88DE00F299A6 /* Build configuration list for PBXNativeTarget "Job App CounterTests" */;
+			buildPhases = (
+				A801647E2E4D88DE00F299A6 /* Sources */,
+				A801647F2E4D88DE00F299A6 /* Frameworks */,
+				A80164802E4D88DE00F299A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A80164842E4D88DE00F299A6 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				A80164852E4D88DE00F299A6 /* Job App CounterTests */,
+			);
+			name = "Job App CounterTests";
+			packageProductDependencies = (
+			);
+			productName = "Job App CounterTests";
+			productReference = A80164822E4D88DE00F299A6 /* Job App CounterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A801648B2E4D88DE00F299A6 /* Job App CounterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A801649C2E4D88DE00F299A6 /* Build configuration list for PBXNativeTarget "Job App CounterUITests" */;
+			buildPhases = (
+				A80164882E4D88DE00F299A6 /* Sources */,
+				A80164892E4D88DE00F299A6 /* Frameworks */,
+				A801648A2E4D88DE00F299A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A801648E2E4D88DE00F299A6 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				A801648F2E4D88DE00F299A6 /* Job App CounterUITests */,
+			);
+			name = "Job App CounterUITests";
+			packageProductDependencies = (
+			);
+			productName = "Job App CounterUITests";
+			productReference = A801648C2E4D88DE00F299A6 /* Job App CounterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A80164692E4D88DC00F299A6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					A80164702E4D88DC00F299A6 = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					A80164812E4D88DE00F299A6 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = A80164702E4D88DC00F299A6;
+					};
+					A801648B2E4D88DE00F299A6 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = A80164702E4D88DC00F299A6;
+					};
+				};
+			};
+			buildConfigurationList = A801646C2E4D88DC00F299A6 /* Build configuration list for PBXProject "Job App Counter" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A80164682E4D88DC00F299A6;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = A80164722E4D88DC00F299A6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A80164702E4D88DC00F299A6 /* Job App Counter */,
+				A80164812E4D88DE00F299A6 /* Job App CounterTests */,
+				A801648B2E4D88DE00F299A6 /* Job App CounterUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A801646F2E4D88DC00F299A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A80164802E4D88DE00F299A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A801648A2E4D88DE00F299A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A801646D2E4D88DC00F299A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A801647E2E4D88DE00F299A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A80164882E4D88DE00F299A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A80164842E4D88DE00F299A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A80164702E4D88DC00F299A6 /* Job App Counter */;
+			targetProxy = A80164832E4D88DE00F299A6 /* PBXContainerItemProxy */;
+		};
+		A801648E2E4D88DE00F299A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A80164702E4D88DC00F299A6 /* Job App Counter */;
+			targetProxy = A801648D2E4D88DE00F299A6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A80164942E4D88DE00F299A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = NL43PAXVLN;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A80164952E4D88DE00F299A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = NL43PAXVLN;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		A80164972E4D88DE00F299A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Job App Counter/Job_App_Counter.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NL43PAXVLN;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Personal.Job-App-Counter";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A80164982E4D88DE00F299A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Job App Counter/Job_App_Counter.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NL43PAXVLN;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Personal.Job-App-Counter";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		A801649A2E4D88DE00F299A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NL43PAXVLN;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Personal.Job-App-CounterTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Job App Counter.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Job App Counter";
+			};
+			name = Debug;
+		};
+		A801649B2E4D88DE00F299A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NL43PAXVLN;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Personal.Job-App-CounterTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Job App Counter.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Job App Counter";
+			};
+			name = Release;
+		};
+		A801649D2E4D88DE00F299A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NL43PAXVLN;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Personal.Job-App-CounterUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Job App Counter";
+			};
+			name = Debug;
+		};
+		A801649E2E4D88DE00F299A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NL43PAXVLN;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Personal.Job-App-CounterUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Job App Counter";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A801646C2E4D88DC00F299A6 /* Build configuration list for PBXProject "Job App Counter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A80164942E4D88DE00F299A6 /* Debug */,
+				A80164952E4D88DE00F299A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A80164962E4D88DE00F299A6 /* Build configuration list for PBXNativeTarget "Job App Counter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A80164972E4D88DE00F299A6 /* Debug */,
+				A80164982E4D88DE00F299A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A80164992E4D88DE00F299A6 /* Build configuration list for PBXNativeTarget "Job App CounterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A801649A2E4D88DE00F299A6 /* Debug */,
+				A801649B2E4D88DE00F299A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A801649C2E4D88DE00F299A6 /* Build configuration list for PBXNativeTarget "Job App CounterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A801649D2E4D88DE00F299A6 /* Debug */,
+				A801649E2E4D88DE00F299A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A80164692E4D88DC00F299A6 /* Project object */;
+}
