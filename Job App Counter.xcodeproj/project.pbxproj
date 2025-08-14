@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		A80164A62E4D892200F299A6 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A80164A52E4D892200F299A6 /* WidgetKit.framework */; };
+		A80164A82E4D892200F299A6 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A80164A72E4D892200F299A6 /* SwiftUI.framework */; };
+		A80164B62E4D892300F299A6 /* Application StatsExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = A80164A32E4D892200F299A6 /* Application StatsExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		A80164832E4D88DE00F299A6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -21,13 +27,47 @@
 			remoteGlobalIDString = A80164702E4D88DC00F299A6;
 			remoteInfo = "Job App Counter";
 		};
+		A80164B42E4D892300F299A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A80164692E4D88DC00F299A6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A80164A22E4D892200F299A6;
+			remoteInfo = "Application StatsExtension";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A80164BB2E4D892300F299A6 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A80164B62E4D892300F299A6 /* Application StatsExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		A80164712E4D88DC00F299A6 /* Job App Counter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Job App Counter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A80164822E4D88DE00F299A6 /* Job App CounterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Job App CounterTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A801648C2E4D88DE00F299A6 /* Job App CounterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Job App CounterUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A80164A32E4D892200F299A6 /* Application StatsExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Application StatsExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A80164A52E4D892200F299A6 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		A80164A72E4D892200F299A6 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		A80164B72E4D892300F299A6 /* Exceptions for "Application Stats" folder in "Application StatsExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = A80164A22E4D892200F299A6 /* Application StatsExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		A80164732E4D88DC00F299A6 /* Job App Counter */ = {
@@ -43,6 +83,14 @@
 		A801648F2E4D88DE00F299A6 /* Job App CounterUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "Job App CounterUITests";
+			sourceTree = "<group>";
+		};
+		A80164A92E4D892200F299A6 /* Application Stats */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				A80164B72E4D892300F299A6 /* Exceptions for "Application Stats" folder in "Application StatsExtension" target */,
+			);
+			path = "Application Stats";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -69,6 +117,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A80164A02E4D892200F299A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A80164A82E4D892200F299A6 /* SwiftUI.framework in Frameworks */,
+				A80164A62E4D892200F299A6 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -78,6 +135,8 @@
 				A80164732E4D88DC00F299A6 /* Job App Counter */,
 				A80164852E4D88DE00F299A6 /* Job App CounterTests */,
 				A801648F2E4D88DE00F299A6 /* Job App CounterUITests */,
+				A80164A92E4D892200F299A6 /* Application Stats */,
+				A80164A42E4D892200F299A6 /* Frameworks */,
 				A80164722E4D88DC00F299A6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,8 +147,18 @@
 				A80164712E4D88DC00F299A6 /* Job App Counter.app */,
 				A80164822E4D88DE00F299A6 /* Job App CounterTests.xctest */,
 				A801648C2E4D88DE00F299A6 /* Job App CounterUITests.xctest */,
+				A80164A32E4D892200F299A6 /* Application StatsExtension.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		A80164A42E4D892200F299A6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A80164A52E4D892200F299A6 /* WidgetKit.framework */,
+				A80164A72E4D892200F299A6 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,10 +171,12 @@
 				A801646D2E4D88DC00F299A6 /* Sources */,
 				A801646E2E4D88DC00F299A6 /* Frameworks */,
 				A801646F2E4D88DC00F299A6 /* Resources */,
+				A80164BB2E4D892300F299A6 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A80164B52E4D892300F299A6 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				A80164732E4D88DC00F299A6 /* Job App Counter */,
@@ -163,6 +234,28 @@
 			productReference = A801648C2E4D88DE00F299A6 /* Job App CounterUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		A80164A22E4D892200F299A6 /* Application StatsExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A80164B82E4D892300F299A6 /* Build configuration list for PBXNativeTarget "Application StatsExtension" */;
+			buildPhases = (
+				A801649F2E4D892200F299A6 /* Sources */,
+				A80164A02E4D892200F299A6 /* Frameworks */,
+				A80164A12E4D892200F299A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				A80164A92E4D892200F299A6 /* Application Stats */,
+			);
+			name = "Application StatsExtension";
+			packageProductDependencies = (
+			);
+			productName = "Application StatsExtension";
+			productReference = A80164A32E4D892200F299A6 /* Application StatsExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -184,6 +277,9 @@
 						CreatedOnToolsVersion = 16.4;
 						TestTargetID = A80164702E4D88DC00F299A6;
 					};
+					A80164A22E4D892200F299A6 = {
+						CreatedOnToolsVersion = 16.4;
+					};
 				};
 			};
 			buildConfigurationList = A801646C2E4D88DC00F299A6 /* Build configuration list for PBXProject "Job App Counter" */;
@@ -203,6 +299,7 @@
 				A80164702E4D88DC00F299A6 /* Job App Counter */,
 				A80164812E4D88DE00F299A6 /* Job App CounterTests */,
 				A801648B2E4D88DE00F299A6 /* Job App CounterUITests */,
+				A80164A22E4D892200F299A6 /* Application StatsExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -223,6 +320,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		A801648A2E4D88DE00F299A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A80164A12E4D892200F299A6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -253,6 +357,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A801649F2E4D892200F299A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -265,6 +376,11 @@
 			isa = PBXTargetDependency;
 			target = A80164702E4D88DC00F299A6 /* Job App Counter */;
 			targetProxy = A801648D2E4D88DE00F299A6 /* PBXContainerItemProxy */;
+		};
+		A80164B52E4D892300F299A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A80164A22E4D892200F299A6 /* Application StatsExtension */;
+			targetProxy = A80164B42E4D892300F299A6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -513,6 +629,64 @@
 			};
 			name = Release;
 		};
+		A80164B92E4D892300F299A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = "Application Stats/Application_Stats.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NL43PAXVLN;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Application Stats/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Application Stats";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Personal.Job-App-Counter.Application-Stats";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A80164BA2E4D892300F299A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = "Application Stats/Application_Stats.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NL43PAXVLN;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Application Stats/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Application Stats";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Personal.Job-App-Counter.Application-Stats";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -548,6 +722,15 @@
 			buildConfigurations = (
 				A801649D2E4D88DE00F299A6 /* Debug */,
 				A801649E2E4D88DE00F299A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A80164B82E4D892300F299A6 /* Build configuration list for PBXNativeTarget "Application StatsExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A80164B92E4D892300F299A6 /* Debug */,
+				A80164BA2E4D892300F299A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
