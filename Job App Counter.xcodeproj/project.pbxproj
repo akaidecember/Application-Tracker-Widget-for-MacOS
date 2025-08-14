@@ -10,6 +10,10 @@
 		A80164A62E4D892200F299A6 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A80164A52E4D892200F299A6 /* WidgetKit.framework */; };
 		A80164A82E4D892200F299A6 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A80164A72E4D892200F299A6 /* SwiftUI.framework */; };
 		A80164B62E4D892300F299A6 /* Application StatsExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = A80164A32E4D892200F299A6 /* Application StatsExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A80164BD2E4D8ABC00F299A6 /* CounterState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80164BC2E4D8AB300F299A6 /* CounterState.swift */; };
+		A80164C32E4DBA5800F299A6 /* CounterState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80164BC2E4D8AB300F299A6 /* CounterState.swift */; };
+		A80164C42E4DBB0F00F299A6 /* CounterState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80164BC2E4D8AB300F299A6 /* CounterState.swift */; };
+		A80164C52E4DBB0F00F299A6 /* CounterState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80164BC2E4D8AB300F299A6 /* CounterState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +61,7 @@
 		A80164A32E4D892200F299A6 /* Application StatsExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Application StatsExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A80164A52E4D892200F299A6 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		A80164A72E4D892200F299A6 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		A80164BC2E4D8AB300F299A6 /* CounterState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -132,6 +137,7 @@
 		A80164682E4D88DC00F299A6 = {
 			isa = PBXGroup;
 			children = (
+				A80164C22E4DB95900F299A6 /* Shared */,
 				A80164732E4D88DC00F299A6 /* Job App Counter */,
 				A80164852E4D88DE00F299A6 /* Job App CounterTests */,
 				A801648F2E4D88DE00F299A6 /* Job App CounterUITests */,
@@ -159,6 +165,14 @@
 				A80164A72E4D892200F299A6 /* SwiftUI.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A80164C22E4DB95900F299A6 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				A80164BC2E4D8AB300F299A6 /* CounterState.swift */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -340,6 +354,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A80164C32E4DBA5800F299A6 /* CounterState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,6 +362,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A80164C42E4DBB0F00F299A6 /* CounterState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,6 +370,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A80164C52E4DBB0F00F299A6 /* CounterState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,6 +378,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A80164BD2E4D8ABC00F299A6 /* CounterState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -517,8 +535,8 @@
 				DEVELOPMENT_TEAM = NL43PAXVLN;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Job-App-Counter-Info.plist";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -545,8 +563,8 @@
 				DEVELOPMENT_TEAM = NL43PAXVLN;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Job-App-Counter-Info.plist";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

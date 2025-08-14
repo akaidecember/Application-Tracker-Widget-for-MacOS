@@ -9,81 +9,101 @@ import WidgetKit
 import SwiftUI
 import AppIntents
 
-// MARK: - Timeline Provider
-struct Provider: AppIntentTimelineProvider {
-    func placeholder(in context: Context) -> SimpleEntry {
-        SimpleEntry(date: Date(),
-                    quote: "Keep going, you're doing great!",
-                    count: CounterState.currentCount())
-    }
 
-    func snapshot(for configuration: ConfigurationAppIntent, in context: Context) async -> SimpleEntry {
-        SimpleEntry(date: Date(),
-                    quote: "Keep going, you're doing great!",
-                    count: CounterState.currentCount())
-    }
-    
-    func timeline(for configuration: ConfigurationAppIntent, in context: Context) async -> Timeline<SimpleEntry> {
-        let entry = SimpleEntry(date: Date(),
-                                quote: "Keep going, you're doing great! Don't give up.",
-                                count: CounterState.currentCount())
-        let midnight = Calendar.current.startOfDay(for: Date().addingTimeInterval(86400))
-        return Timeline(entries: [entry], policy: .after(midnight))
-    }
-}
-
-// MARK: - Timeline Entry
-struct SimpleEntry: TimelineEntry {
+struct CounterEntry: TimelineEntry {
     let date: Date
-    let quote: String
     let count: Int
+    let quote: String
 }
 
-// MARK: - Widget UI
-struct Application_StatsEntryView: View {
-    var entry: SimpleEntry
+struct Provider: TimelineProvider {
+    func placeholder(in context: Context) -> CounterEntry {
+        CounterEntry(date: Date(), count: 0, quote: "Keep going, you're doing great!")
+    }
+
+    func getSnapshot(in context: Context, completion: @escaping (CounterEntry) -> ()) {
+        let entry = CounterEntry(
+            date: Date(),
+            count: CounterState.currentCount(),
+            quote: "Keep going, you're doing great!"
+        )
+        completion(entry)
+    }
+
+    func getTimeline(in context: Context, completion: @escaping (Timeline<CounterEntry>) -> ()) {
+        let entry = CounterEntry(
+            date: Date(),
+            count: CounterState.currentCount(),
+            quote: "Keep going, you're doing great!"
+        )
+
+        // Refresh at midnight to reset counter
+        let nextUpdate = Calendar.current.startOfDay(for: Date().addingTimeInterval(86400))
+        let timeline = Timeline(entries: [entry], policy: .after(nextUpdate))
+        completion(timeline)
+    }
+}
+
+struct ApplicationStatsEntryView: View {
+    var entry: Provider.Entry
 
     var body: some View {
-        VStack(spacing: 8) {
+        VStack(spacing: 10) {
+            // Current Date
             Text(entry.date, style: .date)
-                .font(.headline)
-            
-            Text(entry.quote)
                 .font(.caption)
+                .foregroundColor(.secondary)
+
+            // Quote
+            Text(entry.quote)
+                .font(.headline)
                 .multilineTextAlignment(.center)
                 .padding(.horizontal)
-            
+
+            // Counter with +/- buttons
             HStack {
                 Button(intent: DecrementCounterIntent()) {
-                    Text("–")
-                        .font(.largeTitle)
-                        .padding()
+                    Image(systemName: "minus.circle")
+                        .font(.title)
                 }
                 Spacer()
                 Text("\(entry.count)")
-                    .font(.system(size: 36, weight: .bold))
+                    .font(.largeTitle)
+                    .bold()
                 Spacer()
                 Button(intent: IncrementCounterIntent()) {
-                    Text("+")
-                        .font(.largeTitle)
-                        .padding()
+                    Image(systemName: "plus.circle")
+                        .font(.title)
                 }
             }
+            .padding(.horizontal)
         }
         .padding()
+        .containerBackground(.fill.tertiary, for: .widget)
+        .widgetURL(URL(string: "jobappcounter://history"))
     }
 }
 
-// MARK: - Widget Configuration
 struct Application_Stats: Widget {
     let kind: String = "Application_Stats"
 
     var body: some WidgetConfiguration {
-        AppIntentConfiguration(kind: kind,
-                               intent: ConfigurationAppIntent.self,
-                               provider: Provider()) { entry in
-            Application_StatsEntryView(entry: entry)
-                .containerBackground(.fill.tertiary, for: .widget)
+        StaticConfiguration(kind: kind, provider: Provider()) { entry in
+            ApplicationStatsEntryView(entry: entry)
         }
+        .configurationDisplayName("Daily Counter")
+        .description("Track your daily tally with ease.")
+        .supportedFamilies([.systemSmall, .systemMedium])
+    }
+}
+
+struct Application_Stats_Previews: PreviewProvider {
+    static var previews: some View {
+        ApplicationStatsEntryView(entry: CounterEntry(
+            date: Date(),
+            count: 5,
+            quote: "Keep going, you're doing great!"
+        ))
+        .previewContext(WidgetPreviewContext(family: .systemMedium))
     }
 }
